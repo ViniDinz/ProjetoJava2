@@ -24,3 +24,5 @@ Requisitos do Projeto
 
 **REQ7** - O sistema deve ser capaz de diferenciar os produtos da pizzaria em diferentes classes como bebidas, comidas, acompanhamentos etc.
 
+**REQ8** - O sistema deve ser capaz de armazenar o CPF, Nome e endereço dos funcionarios dessa pizzaria.
+
