@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="542.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.br.ProjetoPizzaria.gui.TelaAlimentosController">
+   <children>
+      <TableView fx:id="ListaAlimentoTBV" layoutX="14.0" layoutY="9.0" prefHeight="523.0" prefWidth="362.0">
+        <columns>
+          <TableColumn fx:id="NomeAlimentosColumn" prefWidth="150.0" text="Nome" />
+          <TableColumn fx:id="PrecoAlimentosColumn" prefWidth="90.0" text="Preço" />
+            <TableColumn fx:id="TipoAlimentosColumn" prefWidth="120.0" text="Tipo" />
+        </columns>
+      </TableView>
+      <Button fx:id="AdicionarAlimentoButton" layoutX="411.0" layoutY="71.0" mnemonicParsing="false" onAction="#AdicionarAlimentoFunction" prefHeight="26.0" prefWidth="125.0" text="Adicionar Alimento" />
+      <Button fx:id="ExcluirAlimentoButton" layoutX="411.0" layoutY="109.0" mnemonicParsing="false" onAction="#ExcluirAlimentoFunction" prefHeight="26.0" prefWidth="126.0" text="Excluir Alimento" />
+      <Button fx:id="AlterarAlimentoButton" layoutX="411.0" layoutY="149.0" mnemonicParsing="false" onAction="#AlterarAlimentoFunction" prefHeight="26.0" prefWidth="126.0" text="Alterar Alimento" />
+      <Label fx:id="label1" layoutX="424.0" layoutY="254.0" prefHeight="18.0" prefWidth="102.0" />
+   </children>
+</AnchorPane>
