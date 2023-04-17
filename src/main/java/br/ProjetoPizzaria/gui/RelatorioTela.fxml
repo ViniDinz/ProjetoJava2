@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="558.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.br.ProjetoPizzaria.gui.RelatorioTelaController">
+   <children>
+      <Text layoutX="15.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero De Vendas :" />
+      <Text layoutX="8.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço Total das Vendas : " />
+      <Text layoutX="253.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alimentos Mais Vendidos" />
+      <ListView fx:id="RankingAlimentos" layoutX="257.0" layoutY="110.0" prefHeight="287.0" prefWidth="132.0" />
+      <Text layoutX="393.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendas" />
+      <TableView fx:id="VendaTableView" layoutX="393.0" layoutY="23.0" prefHeight="456.0" prefWidth="534.0">
+         <columns>
+            <TableColumn fx:id="TempoDaVendaColumn" prefWidth="145.0" text="Tempo da Venda" />
+            <TableColumn fx:id="FuncionarioColumn" prefWidth="150.0" text="Funcionario" />
+            <TableColumn fx:id="ClienteColumn" prefWidth="150.0" text="Cliente" />
+            <TableColumn fx:id="PrecoColumn" prefWidth="100.0" text="Preço" />
+         </columns>
+      </TableView>
+      <Button fx:id="VoltarButton" layoutX="18.0" layoutY="519.0" mnemonicParsing="false" onAction="#VoltarFunction" text="Voltar" />
+      <Button fx:id="RelatorioDiarioButton" layoutX="18.0" layoutY="401.0" mnemonicParsing="false" onAction="#RelatorioDiarioFunction" prefHeight="26.0" prefWidth="112.0" text="Relatorio Diario" />
+      <Button fx:id="RelatorioAnualButton" layoutX="150.0" layoutY="402.0" mnemonicParsing="false" onAction="#RelatorioAnualFunction" text="Relatorio Anual" />
+      <Button fx:id="RelatorioMensalButton" layoutX="84.0" layoutY="437.0" mnemonicParsing="false" onAction="#RelatorioMensalFunction" prefHeight="26.0" prefWidth="112.0" text="Relatorio Mensal" />
+      <Button fx:id="SalvarButton" layoutX="172.0" layoutY="519.0" mnemonicParsing="false" onAction="#SalvarFunction" text="Salvar" />
+      <Label fx:id="NdeVendasLabel" layoutX="138.0" layoutY="47.0" prefHeight="18.0" prefWidth="174.0" />
+      <Label fx:id="PrecoLabel" layoutX="149.0" layoutY="77.0" prefHeight="18.0" prefWidth="174.0" />
+      <TextField fx:id="NomeArquivoTextField" layoutX="131.0" layoutY="493.0" />
+      <Text layoutX="131.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do Arquivo :" />
+   </children>
+</AnchorPane>
