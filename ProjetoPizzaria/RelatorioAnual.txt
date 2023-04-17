@@ -1,0 +1,11 @@
+Relatorio: 19-05-2025-13-33-24
+
+Numero de Vendas: 1 
+Preço Total das Vendas: 27.0 
+Lista de vendas: 
+Tempo De Venda			Funcionario			Cliente				Preço
+17-05-2025-13-31-48		osvaldo				maria				27,00 
+Ranking Alimentos: 
+Alimento: coca cola 2l          ,Quantidade de Vendas: 3 
+Alimento: batata doce          ,Quantidade de Vendas: 0 
+Alimento: Pizza calabreza          ,Quantidade de Vendas: 0 

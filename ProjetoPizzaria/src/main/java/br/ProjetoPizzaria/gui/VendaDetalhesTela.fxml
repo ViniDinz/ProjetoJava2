@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="424.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.br.ProjetoPizzaria.gui.VendaDetalhesTelaController">
+   <children>
+      <ChoiceBox fx:id="VendaCB" layoutX="31.0" layoutY="75.0" onAction="#MostrarDetalhes" prefWidth="150.0" />
+      <Text layoutX="31.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venda" />
+      <TableView fx:id="ItemVendaTableView" layoutX="231.0" layoutY="13.0" prefHeight="343.0" prefWidth="242.0">
+        <columns>
+          <TableColumn fx:id="NomeColumn" prefWidth="120.0" text="Nome" />
+            <TableColumn fx:id="QuantidadeColumn" prefWidth="120.0" text="Quantidade" />
+        </columns>
+      </TableView>
+      <Text layoutX="32.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço Total :" />
+      <Text layoutX="32.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliente: " />
+      <Text layoutX="31.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionario :" />
+      <Label fx:id="PrecoLabel" layoutX="106.0" layoutY="112.0" prefHeight="18.0" prefWidth="122.0" />
+      <Label fx:id="ClienteLabel" layoutX="82.0" layoutY="140.0" prefHeight="18.0" prefWidth="142.0" />
+      <Label fx:id="FuncionarioLabel" layoutX="106.0" layoutY="175.0" prefHeight="18.0" prefWidth="121.0" />
+      <Button fx:id="VoltarButton" layoutX="82.0" layoutY="290.0" mnemonicParsing="false" onAction="#VoltarFunction" text="Voltar" />
+      <Text layoutX="31.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data da Venda :" />
+      <Label fx:id="DataLabel" layoutX="119.0" layoutY="204.0" prefHeight="18.0" prefWidth="109.0" />
+   </children>
+</AnchorPane>

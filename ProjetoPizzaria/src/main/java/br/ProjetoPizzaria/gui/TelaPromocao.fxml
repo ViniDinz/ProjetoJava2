@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="369.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.br.ProjetoPizzaria.gui.TelaPromocaoController">
+   <children>
+      <TextField fx:id="ValorTextField" layoutX="39.0" layoutY="49.0" prefHeight="26.0" prefWidth="175.0" />
+      <DatePicker fx:id="DataDeInicioDatePicker" layoutX="38.0" layoutY="96.0" />
+      <DatePicker fx:id="DateDeFimDatePicker" layoutX="39.0" layoutY="152.0" />
+      <Text layoutX="39.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor" wrappingWidth="137.33673477172852" />
+      <Text layoutX="39.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de inicio" wrappingWidth="94.13672256469727" />
+      <Text layoutX="39.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Finalização" wrappingWidth="105.33673095703125" />
+      <Button fx:id="CriarPromocaoButton" layoutX="64.0" layoutY="196.0" mnemonicParsing="false" onAction="#CriarPromocaoFunction" prefHeight="26.0" prefWidth="125.0" text="Criar Promoção" />
+      <Button fx:id="VoltarButton" layoutX="102.0" layoutY="265.0" mnemonicParsing="false" onAction="#VoltarFunction" text="Voltar" />
+      <TableView fx:id="AlimentoTableView" layoutX="226.0" layoutY="41.0" prefHeight="262.0" prefWidth="198.0">
+        <columns>
+          <TableColumn fx:id="AlimentoNomeColumn" prefWidth="200.0" text="Alimentos validos" />
+        </columns>
+      </TableView>
+      <Text layoutX="226.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pressione Ctrl para selecionar" />
+      <Text layoutX="226.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="multiplos alimentos" />
+      <Button fx:id="PromocoesExpiradas" layoutX="39.0" layoutY="231.0" mnemonicParsing="false" onAction="#LimparPromocoesExpiradas" prefHeight="26.0" prefWidth="175.0" text="Limpar Promoçoes expiradas" />
+      <TableView fx:id="PromocaoTableView" layoutX="424.0" layoutY="41.0" prefHeight="262.0" prefWidth="278.0">
+        <columns>
+          <TableColumn fx:id="ValorTableColumn" prefWidth="75.0" text="Valor(%)" />
+          <TableColumn fx:id="InicioTableColumn" prefWidth="100.0" text="Data de inicio" />
+            <TableColumn fx:id="FimTableColumn" prefWidth="100.0" text="Data De fim" />
+        </columns>
+      </TableView>
+      <Button fx:id="DetalhesButton" layoutX="537.0" layoutY="316.0" mnemonicParsing="false" onAction="#DetalhesFunction" text="Detalhes" />
+      <Button fx:id="ExcluirPromocaoButton" layoutX="327.0" layoutY="316.0" mnemonicParsing="false" onAction="#ExcluirPromocaoFunction" text="Excluir Promoção" />
+      <Button fx:id="AlterarPromocaoButton" layoutX="214.0" layoutY="316.0" mnemonicParsing="false" onAction="#AlterarPromocaoFunction" text="Alterar Promoção" />
+   </children>
+</AnchorPane>

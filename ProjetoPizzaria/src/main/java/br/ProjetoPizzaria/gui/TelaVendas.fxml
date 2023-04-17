@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="477.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.br.ProjetoPizzaria.gui.TelaVendasController">
+   <children>
+      <TableView fx:id="VendaTableView" layoutX="14.0" layoutY="14.0" prefHeight="456.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="TempoDaVendaColumn" prefWidth="145.0" text="Tempo da Venda" />
+          <TableColumn fx:id="FuncionarioColumn" prefWidth="150.0" text="Funcionario" />
+            <TableColumn fx:id="ClienteColumn" prefWidth="150.0" text="Cliente" />
+            <TableColumn fx:id="PrecoColumn" prefWidth="140.0" text="Preço" />
+        </columns>
+      </TableView>
+      <Button fx:id="VoltarButton" layoutX="632.0" layoutY="339.0" mnemonicParsing="false" onAction="#VoltarFunction" text="Voltar" />
+      <Button fx:id="AdicionarVendaButton" layoutX="603.0" layoutY="60.0" mnemonicParsing="false" onAction="#AdicionarVendaFunction" text="Adicionar venda" />
+      <Button fx:id="ExcluirVendaButton" layoutX="612.0" layoutY="98.0" mnemonicParsing="false" onAction="#ExcluirVendaFunction" text="Excluir Venda" />
+      <Button fx:id="AtualizarVendaButton" layoutX="606.0" layoutY="140.0" mnemonicParsing="false" onAction="#AtualizarVendaFunction" text="Atualizar Venda" />
+      <Button fx:id="RelatorioButton" layoutX="620.0" layoutY="295.0" mnemonicParsing="false" onAction="#RelatorioFunction" text="Relatorios" />
+      <Button fx:id="DetalhesVendaButton" layoutX="599.0" layoutY="176.0" mnemonicParsing="false" onAction="#DetalhesVendaFunction" text="Detalhes da venda" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="311.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.br.ProjetoPizzaria.gui.AlterarUsuariosTelaController">
+   <children>
+      <TextField fx:id="LoginTextField" layoutX="29.0" layoutY="96.0" />
+      <Button fx:id="AlterarUsuarioButton" layoutX="144.0" layoutY="244.0" mnemonicParsing="false" onAction="#AlterarUsuarioFunction" text="Alterar Usuario" />
+      <Button fx:id="VoltarButton" layoutX="165.0" layoutY="284.0" mnemonicParsing="false" onAction="#VoltarFunction" text="Voltar" />
+      <Text layoutX="29.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Novo Login" />
+      <PasswordField fx:id="SenhaAntigaPassField" layoutX="30.0" layoutY="145.0" />
+      <Label fx:id="label1" layoutX="105.0" layoutY="226.0" prefHeight="18.0" prefWidth="173.0" />
+      <Text layoutX="29.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha Antiga :" />
+      <PasswordField fx:id="SenhaNovaPassField" layoutX="30.0" layoutY="187.0" />
+      <Text layoutX="29.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nova Senha" />
+      <ChoiceBox fx:id="UsuarioCB" layoutX="29.0" layoutY="54.0" prefWidth="150.0" />
+      <Text layoutX="30.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" />
+   </children>
+</AnchorPane>
